@@ -1,5 +1,5 @@
 """
-AC Sprite Slicer - Simple Windows GUI
+ac-sprite-slicer - Simple Windows GUI
 Tkinter interface for the sprite slicing pipeline.
 """
 
@@ -19,7 +19,7 @@ from version import VERSION
 class SlicerGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title(f"AC Sprite Slicer v{VERSION}")
+        self.root.title(f"ac-sprite-slicer v{VERSION}")
         self.root.geometry("700x650")
         self.root.resizable(True, True)
 

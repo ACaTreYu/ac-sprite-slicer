@@ -1,6 +1,6 @@
 @echo off
 echo ============================================
-echo  Building AC Sprite Slicer EXE
+echo  Building ac-sprite-slicer EXE
 echo ============================================
 echo.
 
@@ -8,20 +8,21 @@ echo.
 pyinstaller ^
     --onefile ^
     --windowed ^
-    --name "AC Sprite Slicer" ^
+    --name "ac-sprite-slicer" ^
     --add-data "batch_auto_slicer.py;." ^
     --add-data "tile_categorizer.py;." ^
     --add-data "generate_ue5_meshes.py;." ^
     --add-data "sprite_slicer.py;." ^
+    --add-data "version.py;." ^
     --hidden-import PIL ^
     --hidden-import PIL.Image ^
     app.py
 
 echo.
-if exist "dist\AC Sprite Slicer.exe" (
+if exist "dist\ac-sprite-slicer.exe" (
     echo ============================================
     echo  SUCCESS! EXE built at:
-    echo  dist\AC Sprite Slicer.exe
+    echo  dist\ac-sprite-slicer.exe
     echo ============================================
 ) else (
     echo  BUILD FAILED - check output above

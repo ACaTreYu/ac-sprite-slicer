@@ -1,5 +1,5 @@
 """
-AC Sprite Slicer - Version Control
+ac-sprite-slicer - Version Control
 """
 
 VERSION_MAJOR = 1
